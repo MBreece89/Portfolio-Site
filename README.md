@@ -1,87 +1,126 @@
-Project Rubric
-Your project will be evaluated by a Udacity code reviewer according to the Build a Portfolio Site project rubric. Depending on your background knowledge of HTML and CSS, you may not need to complete all lessons to build this project. To evaluate what you'll need to know, start by downloading the mockup we've provided, and review the rubric. Be sure to follow the project rubric closely when designing your page.
 
-Intro to HTML/CSS + Responsive Web Design
-Before moving forward, make sure you are comfortable with the content from Intro to HTML and CSS and Responsive Web Design Fundamentals. For a quick self-assessment, ask yourself:
+PROJECT SPECIFICATION
+Build a Portfolio Site
 
-What are the basic sections of a document?
-How can we represent metadata on a webpage?
-What is an HTML element?
-What is an attribute of an HTML element? How is it used?
-What does adding a class attribute to an HTML element do? How does this relate to CSS?
-What are some semantic HTML elements that you have learned? Pay special attention to the following:
-<header>
-<footer>
-<section>
-<article>
-<nav>
-<main>
-How are ordered lists made? What about unordered lists?
-How does an HTML file "know" which styles to apply? (i.e., how is a stylesheet linked to HTML?)
-How are CSS properties set to specific values?
-How does a media query help us conditionally apply CSS styles across different viewport sizes? Hint: Consider the @media CSS at-rule
-How can you use operators like and, only, or not to create complex media queries?
-How are grid-based layouts created (e.g., with flexbox)?
-Development Strategy (How Do I Complete this Project?)
-All of the skills you'll need to help you build this can be found in the lessons in this part of your Nanodegree program. After reviewing the rubric at the top of this page, feel free to begin the workflow:
+Design
 
-1. Download and review the design mockup (also at the very bottom of this page under Supporting Materials).
+CRITERIA
+MEETS SPECIFICATIONS
+Required Elements
 
-There is no starter code provided for this project! Recall the Animal Trading Cards exercise earlier in this program. Think about how you had customized that page to look the way you wanted it to -- how you recreated that layout with your own code and style
-Note that ultimately, the colors and overall design in the mockup are just general guidelines! As long as you fulfill the rubric items noted above, you will find success with this project. You are not required to replicate the mockup entirely; however, in the past, students have found it very helpful to begin building the site to look close to the provided mockup (before customizing). Remember: in the end, this is your portfolio to showcase!
-2. Identify the various boxes you will need to build in order to recreate this design.
+The page at minimum includes all of the following:
 
-What individual blocks/boxes make up the mockup? That is, what are the unique "sections" that make up this page? For example, it looks like there's header at the very top of the page. What other major sections can you find in the mockup? There are at least two more!
-Are any of these larger individual blocks comprised of "child" blocks? For example, the header looks like it consists of two child blocks: one small block for the logo, and one small block for the title
-3. Open up your favorite code editor and write your HTML and CSS files. Continue to iterate until your work is representative of the design mockup.
+at least 4 images
+title text (h1, h2, etc.)
+regular (paragraph) text
+a logo.
+Semantic HTML
 
-Recall the required elements from the rubric: at least four (4) images, a title text (feel free to use an <h1> or <h2> tag), paragraph texts, and a logo
-Think about the semantic HTML elements that you have learned, such as <header>, <footer>, <section>, <article>, <nav>, and <main>. How can you incorporate these elements into your portfolio page? How can they be used to break up the individual blocks you just identified?
-Make sure that all displayed content is readable/legible, and do not overlap other content or overflow the viewport
-Horizontal scrolling should not be necessary to view content. Vertical scrolling to view content is allowed
-You are welcome to use Flexbox, CSS Grid, or Bootstrap to build your grid-based layout
-4. Implement responsive design to your page.
+HTML5 semantic tags such as <header>, <footer>, <article>, <section> etc. are used to add meaning to the code.
 
-Your portfolio site should be optimized across different viewport sizes
-Recall what you've learned about media queries in Responsive Web Design Fundamentals
-How can you make your images responsive? For a more in-depth look, check out our (optional) course on Responsive Images
-5. Personalize your portfolio with custom colors, additional content, and your own images. As we mentioned earlier -- this is your portfolio to showcase! In the past, students have frequently implemented additional features such as:
+No <div> or <section> tags are without a CSS class or id.
 
-An "About Me" section
-Contact details
-Social media links
-A navigation bar
-Styling Tips
-Stylesheet(s) should be linked to HTML
-There should be no style attributes present within the body of the HTML document
-Likewise, there should be no <style> elements in document (i.e., your .html file)
-It is perfectly acceptable to include HTML attributes for height and width of <img> elements
-Need images? Feel free to check out free images from services like Unsplash or Pixabay!
-Code Validation
-Before submitting your project, check your HTML and CSS against W3C's Validators. Note that the validators consider the following as errors -- whereas Udacity regards these errors as acceptable:
+Check out the W3C documentation on HTML Structural Elements to learn more!
 
-HTML5:
+Custom Design
 
-Bad value X-UA-Compatible for attribute http-equiv on element meta when using the X-UA-Compatible meta tag
+Provide at least one of the following customizations:
 
-CSS3:
+Customize images and text.
+Customize placement of the elements on the page (grid layout) with HTML, CSS or both.
+Customize CSS styles applied at minimum to paragraph and heading elements.
+Grid-Based Layout
 
-Property [some property here] is an unknown vendor extension when using vendor prefixed properties (e.g., -moz-box-sizing)
+Page utilizes a grid-based layout with styles making use of the flexbox layout or a framework like Bootstrap, Foundation, etc.
+If you're using Bootstrap: the rows and columns of the grid must be wrapped in an element with a container class.
 
-Additional Resources
-Here are some tools and articles you may find useful when developing your portfolio site:
+Responsiveness
 
-Udacity HTML/CSS Style Guide
-HTML Validator
-CSS Validator
-Responsive Images via Interneting is Hard
-A Complete Guide to Flexbox via CSS Tricks
-Flexbox Froggy
-Still Not Sure How to Begin?
-Feel free to check out this post in Knowledge for additional resources curated by fellow students. Beyond that, you are welcome to check out a webinar discussing the Build a Portfolio Site project below!
+CRITERIA
+MEETS SPECIFICATIONS
+Cross-Device Compatibility
 
+All content is responsive and displays on all display sizes. This includes:
 
-A note on plagiarism: Viewing someone else’s code to get a general idea of implementation, then putting it away and starting to write your own code from scratch is okay. Please do not copy someone's code, in whole or in part. For further details, check out this guide regarding plagiarism.
+Desktop
+Mobile: Google Nexus 5
+Tablet: Apple iPad
+An image's associated title and text renders next to the image in all viewport sizes.
 
-Supporting Materials
- Design-Mockup-Portfolio
+TIP: Test responsiveness with Chrome Developer Tools device emulation by right-clicking anywhere on page, selecting ‘Inspect Element’, clicking the rectangle to the left of the Elements tab, select Apple iPad or Google Nexus 5 from Device drop-down list, and click reload.
+
+Provide All Content
+
+All content is rendered on all three devices. No content should be hidden on mobile devices.
+
+Viewport meta Tag
+
+Viewport meta tag is included in HTML. (i.e. <meta name=”viewport” …)
+
+Responsive Images
+
+If a CSS framework is used, classes provided by the CSS framework are used to make images responsive, otherwise media-queries are used to ensure responsiveness of images.
+
+Separation of Concerns
+
+CRITERIA
+MEETS SPECIFICATIONS
+Styles Separated From HTML
+
+Portfolio completely separates structure (HTML) from design/style (CSS). There are no style attributes present in the body of the HTML document. There are no <style> elements in the document.
+
+Note: It is acceptable to include height and width attributes in <img> elements.
+
+File structure
+
+Files are organized with a directory structure that separates files based on functionality. For example:
+css/ for stylesheets
+img/ for images
+js/ for JavaScript files
+
+Code Quality
+
+CRITERIA
+MEETS SPECIFICATIONS
+HTML Formatting rules
+
+All code ( HTML element names, attributes, attribute values) is lowercase (except text/CDATA).
+Code does not have trailing white spaces.
+Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
+Code uses a new line for every block, list or table element and indent every such child element (it's acceptable to put all <li> elements in one line).
+[Optional] When quoting attribute values, code uses double quotation marks.
+HTML Style Rules
+
+HTML documents use HTML5 <!doctype html>.
+Code passes HTML and CSS validators.
+*[Optional] Code does not use entity references unless necessary e.g. characters with special meaning in HTML (like < and &) as well as control or “invisible” characters (like no-break spaces).
+[Optional] Code omits type attributes for style sheets and scripts.
+CSS Formatting Rules
+
+Code does not have trailing white spaces.
+Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
+Code indents all block content, that is rules within rules as well as declarations to reflect hierarchy and improve understanding.
+Code uses a semicolon after every declaration for consistency and extensibility reasons.
+Code always uses a space after a property name's colon, but no space between property and colon, for consistency reasons.
+Code always use a single space between the last selector and the opening brace that begins the declaration block.
+Code always start a new line for each selector and declaration.
+Code always put a blank line (two line breaks) between rules.
+[Optional] Code uses double quotation marks for attribute selectors or property values. Do not use quotation marks in URI values (url()).
+CSS Style Rules
+
+Code uses meaningful or generic ID and class names that are as short as possible but as long as necessary.
+Code does not use element names in conjunction with IDs or classes.
+Code uses shorthand properties where possible.
+[Optional] Code omits unit specification after 0 values.
+[Optional] Code includes leading 0s in decimal values for readability.
+[Optional] Code uses 3-character hexadecimal notation where possible.
+[Optional] Code separate words in ID and class names by a hyphen.
+[Optional] Code avoids user agent detection as well as CSS "hacks"—try a different approach first.
+General Meta Rules
+
+HTML templates and documents use UTF-8 encoding. (no BOM) i.e. <meta charset="utf-8">.
+*[Optional] Mark todos and action items with TODO
+Suggestions to Make Your Project Stand Out!
+Use srcset in the img elements to provide optimized images to users on all device sizes.
+
+Include additional JavaScript functionality, while maintaining required components. For example: Bootstrap Navbar, Polymer Components.
